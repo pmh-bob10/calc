@@ -122,8 +122,6 @@ struct ast *newref(struct symbol *s) {
   a->nodetype = 'N';
   a->s = s;
 
-  printf("%d", s->syms->sym == NULL);
-  
   return (struct ast *)a;
 }
 
