@@ -1,5 +1,6 @@
 /* interface to the lexer */
 extern int yylineno; /* from lexer */
+extern char *yytext;
 void yyerror(char *s, ...);
 
 enum bifs {

@@ -390,7 +390,7 @@ void dodef(struct symbol *name, struct symlist *syms, struct ast *func) {
 void yyerror(char *s, ...) {
   va_list ap;
   va_start(ap, s);
-  fprintf(stderr, "%d: error: ", yylineno);
+  fprintf(stderr, "%d: error at '%s': ", yylineno, yytext);
   vfprintf(stderr, s, ap);
   fprintf(stderr, "\n");
 }
